@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+    <html>
+        <head><title> Search Blood </title>
+            <style>
+                /* Style for Input Tag */
+                input[type=text]{
+                    padding-left: 8px;
+                    padding-right: 4px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-left:  40px;
+                    margin-right: 0px;
+                    margin-top:   0px;
+                    margin-bottom: 0px;
+                    box-sizing: border-box;
+                    border: 2px solid black;
+                    transition: 0.5s;
+                    outline: none;
+                    width: 80%;
+                    height: 46px;
+                    box-shadow: 2px 6px 2px 1px rgba(0, 0, 0, 0.2);}
+                /* Style for Submit Button */
+                input[type=submit] {
+                    background-color: FireBrick; 
+                    border: 2px solid FireBrick;
+                    color: black;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-left:  69%;
+                    margin-right: 0px;
+                    margin-top:   15px;
+                    margin-bottom: 8px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    cursor: pointer;}
+                label {
+                    color: black;
+                    font-weight: lighter;}
+                /* Style for Label */
+                .Label {
+                    background-color: FireBrick; 
+                    border: 2px solid FireBrick;
+                    padding-left: 12px;
+                    padding-right: 12px;
+                    padding-top: 7px;
+                    padding-bottom: 6px;
+                    margin-left:  40px;
+                    margin-right: 0px;
+                    margin-top:   10px;
+                    margin-bottom: 10px;
+
+                    height: 22px;
+                    width: 100px;
+                    text-align: left;
+                    text-decoration: none;
+                    display: inline-block;
+                    box-shadow: 2px 6px 2px 1px rgba(0, 0, 0, 0.2);
+                         }
+                 select{
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    -o-appearance: none;
+                    -ms-appearance: none;
+                    appearance: none;
+                    display: DeepSkyBlue;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-left:  40px;
+                    margin-right: 0px;
+                    margin-top:   0px;
+                    margin-bottom: 0px;
+
+                    background-color: white;
+                    box-shadow: 2px 4px 2px 1px rgba(0, 0, 0, 0.2);
+                    border-radius: 0px;
+                    border: 2px solid black;
+                    width: 80%;
+                    height: 46px;
+                       
+                        }
+                 option{
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    -o-appearance: none;
+                    -ms-appearance: none;
+                    appearance: none;
+                    display: DeepSkyBlue;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    margin-left:  10px;
+                    margin-right: 10px;
+                    margin-top:   10px;
+                    margin-bottom: 8px;
+                    background-color: white;
+                    border: 1px solid FireBrick;}
+
+                p{
+                    box-shadow: 2px 6px 2px 1px rgba(0, 0, 0, 0.2);
+                    text-align: center;
+                    color: black;
+                    padding-top: 5px;
+                    padding-bottom: 20px;
+                    font-size: 25px;
+
+                    }
+              .PAGE_LAYOUT{ background-color: LightSlateGrey; padding-top: 10px; padding-bottom: 10px; height: 100%; width: 100%; }
+              .LAYOUT{
+                  background-color: Teal;
+                    padding-left: 4px;
+                    padding-right: 4px;
+                    padding-top: 25px;
+                    padding-bottom: 25px;
+                  margin-left: 30%;
+                  margin-right: 30%;
+                  }
+
+                 img{ 
+                     width: 100%;
+                     height: 250px;}
+                .Container {
+                    margin-left: 19px;
+                    margin-right: 0px;
+                    margin-top: 8px;
+                    margin-bottom: 0px;                    
+                    width: 96%;
+                    background-color: DarkCyan;
+                    
+                    box-shadow: 2px 6px 2px 1px rgba(0, 0, 0, 0.2);}
+
+                p{
+                    box-shadow: 2px 6px 2px 1px rgba(0, 0, 0, 0.2);
+                    text-align: center;
+                    color: black;
+                    background-color: FireBrick;
+                    padding-top: 10px;
+                    padding-bottom: 20px;
+                    font-size: 25px;
+
+                    }
+            </style>
+        </head>
+        <body>
+            <div class="PAGE_LAYOUT">
+               <div class="Container">
+               <div><img src="Search.png" /></div>
+               <div><p> Search Blood Donor </p></div>
+               </div>
+                <div class="LAYOUT">
+                    <form>
+                        <label class = "Label"> Zip Code </label><br>
+                        <input type ="text" name = "ZIP" placeholder="Type Area Code" /><br>
+                        <label class = "Label"> Blood Code </label><br>
+                            <select name = "BloodGroup">
+                                <option  value= " "   selected > Select Blood Group  </option>
+                                <option  value= "B+ " > B+  </option>
+                                <option  value= "B- " > B-  </option>
+                                <option  value= "A+ " > A+  </option>
+                                <option  value= "A- " > A-  </option>
+                                <option  value= "AB+" > AB+ </option>
+                                <option  value= "AB-" > AB- </option>
+                                <option  value= "O+ " > O+  </option>
+                                <option  value= "O- " > O-  </option>
+                            </select><br>
+                         <input type = "submit" value="Search" />
+                    </form>
+                </div>
+            </div>
+        </body>
+    </html>
